@@ -3,8 +3,10 @@
 using namespace std;
 
 int main() {
-    int a = -20;
+    int num1 = 10, num2 = 5;
 
-    cout << abs(a) << endl;
+    bool result1 = num1 > num2;
+    cout << result1 << endl;
+
     return 0;
 }
