@@ -3,26 +3,30 @@
 using namespace std;
 
 int main() {
-    int num1 = 10, num2 = 5;
+    // int num1 = 10;
 
-    cout << (num1 > num2) << endl;
-    cout << (num1 < num2) << endl;
-    cout << (num1 >= num2) << endl;
-    cout << (num1 <= num2) << endl;
-    cout << (num1 == num2) << endl;
-    cout << (num1 != num2) << endl;
+    // if (num1 > 5) {
+    //     cout << "Number is bigger than 5" << endl;
+    // } else {
+    //     cout << "Number is less than 5 or equal" << endl;
+    // }
+    int num = 4;
 
-    // 1 && 1 = 1
-    // 0 && 1 = 0
-    // 0 && 0 = 0
+    switch (num)
+    {
+    case 1:
+        cout << "Number is 1" << endl;
 
-    // 1 || 1 = 1
-    // 1 || 0 = 1
-    // 0 || 1 = 1
-    // 0 || 0 = 0
+        break;
+    case 4: 
+        cout << "Number is 4" << endl;    
 
-    // !1 = 0
-    // !0 = 1
+        break;
+    default:
+        cout << "Default" << endl;
+        
+        break;
+    }
 
     return 0;
 }
