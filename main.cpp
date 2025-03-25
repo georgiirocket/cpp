@@ -5,6 +5,6 @@ using namespace std;
 int main() {
     int a = 20;
 
-    cout << sqrt(a) << endl;
+    cout << pow(a, 2) << endl;
     return 0;
 }
