@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-    int a = 20;
+    int a = -20;
 
-    cout << pow(a, 2) << endl;
+    cout << abs(a) << endl;
     return 0;
 }
