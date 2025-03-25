@@ -11,5 +11,20 @@ int main() {
 
     cout << sum << " " << difference << " " << product << " " << quotient << endl;
 
+    num1++;
+    num1 = num1 + 1;
+    num1 += 1;
+
+    num2--;
+    num2 = num2 - 1;
+    num2 -= 1;
+
+    num1 *= 2;
+    num1 /= 4;
+
+    --num1;
+    ++num2;
+
+
     return 0;
 }
