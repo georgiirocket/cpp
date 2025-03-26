@@ -2,17 +2,10 @@
 using namespace std;
 
 int main() {
-    for(int i = 0; i < 10; i++) {
-        if(i == 5) {
-            break;
-        }
+    int a[5];
+    int b[4] = {1,2,3,4};
 
-        if(i % 2 == 0) {
-            continue;
-        }
+    cout << b[1] << endl;
 
-        cout << i << " " ;
-    }
-    
     return 0;
 }
