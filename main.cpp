@@ -3,30 +3,30 @@
 using namespace std;
 
 int main() {
-    // int num1 = 10;
-
-    // if (num1 > 5) {
-    //     cout << "Number is bigger than 5" << endl;
-    // } else {
-    //     cout << "Number is less than 5 or equal" << endl;
-    // }
-    int num = 4;
-
-    switch (num)
-    {
-    case 1:
-        cout << "Number is 1" << endl;
-
-        break;
-    case 4: 
-        cout << "Number is 4" << endl;    
-
-        break;
-    default:
-        cout << "Default" << endl;
-        
-        break;
+    for (int i = 0; i < 5; i++) {
+        cout << "i = " << i  << endl;
     }
+
+    int num = 0;
+
+    while (num < 5)
+    {
+        cout << "num = " << num  << endl;
+
+        num++;
+    }
+
+    int num2 = 10;
+
+    //First iteration, without conditional
+    do
+    {
+        cout << "num2 = " << num2  << endl;
+
+        num2++;
+    } while (num2 < 5);
+    
+    
 
     return 0;
 }
