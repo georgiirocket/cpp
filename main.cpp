@@ -1,23 +1,20 @@
 #include <iostream>
 using namespace std;
 
-struct Person
-{
-    string name;
-    int age;
-
-    void print() {
-        cout << "Name is: " << name << endl;
-        cout << "Age: " << age << endl;
-    }
-};
-
-
-
-
 int main() {
-    Person p = {"Alex", 20};
-    p.print();
+    int a = 5;
+    int* ptr = &a;
+
+    cout << &a << endl;
+    cout << *ptr << endl;
+
+    //Dynamic memory
+    int* ptrOne = new int;
+    *ptrOne = 8;
+
+    delete ptrOne;
+
+    ptrOne = nullptr;
 
     return 0;
 }
