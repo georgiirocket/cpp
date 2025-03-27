@@ -7,44 +7,39 @@ struct node {
 };
 
 node* head = nullptr;
-node* temp;
 
-void add(int value) {
+void push(int value) {
     if(head == nullptr) {
         head = new node;
 
         head->value = value;
         head->next = nullptr;
 
-        temp = head;
-
         return;
     }
 
-    head->next = new node;
-    head = head->next;
-    head->value = value;
+    node* temp = new node;
+
+    temp->value = value;
+    temp->next = head;
+
+    head = temp;
 }
 
-void print() {
-    node* t = temp;
+void pop() {
+    node* temp = head->next;
+    
+    delete head;
 
-    while (t != nullptr)
-    {
-        cout << t->value << " ";
-
-        t = t->next;
-    }
-
-    cout << endl;
+    head = temp;
 }
 
 int main() {
-    add(1);
-    add(2);
-    add(3);
+    push(2);
+    push(3);
+    pop();
 
-    print();
+    cout << head->value << endl;
 
     return 0;
 }
