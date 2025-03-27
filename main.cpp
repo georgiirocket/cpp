@@ -1,18 +1,23 @@
 #include <iostream>
 using namespace std;
 
-int factorial(int n) {
-    if(n == 0) {
-        return 1;
-    }
+struct Person
+{
+    string name;
+    int age;
 
-    return n * factorial(n - 1);
-}
+    void print() {
+        cout << "Name is: " << name << endl;
+        cout << "Age: " << age << endl;
+    }
+};
+
+
+
 
 int main() {
-    int value = factorial(5);
-
-    cout << value << endl;
+    Person p = {"Alex", 20};
+    p.print();
 
     return 0;
 }
