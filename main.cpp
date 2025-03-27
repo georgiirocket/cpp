@@ -1,24 +1,16 @@
 #include <iostream>
 using namespace std;
 
-void increment(int x) {
-    x++;
+int factorial(int n) {
+    if(n == 0) {
+        return 1;
+    }
 
-    cout << "Increment" <<  x << endl;
-}
-
-//Link
-void decrement(int& x) {
-    x--;
-
-    cout << "Decrement" <<  x << endl;
+    return n * factorial(n - 1);
 }
 
 int main() {
-    int value = 5;
-
-    increment(value);
-    decrement(value);
+    int value = factorial(5);
 
     cout << value << endl;
 
